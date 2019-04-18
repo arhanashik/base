@@ -2,4 +2,5 @@
     <string name="app_name">base</string>
 
     <string name="file_provider_authority" translatable="false">com.workfort.base.fileprovider</string>
+    <string name="title_activity_crop_image">Edit</string>
 </resources>

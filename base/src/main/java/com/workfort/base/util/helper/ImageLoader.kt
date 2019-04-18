@@ -35,7 +35,7 @@ open class ImageLoader {
     companion object {
         fun load(location: Int, imageView: ImageView) {
             val requestOptions = RequestOptions()
-                .timeout(20000)
+                //.timeout(20000)
                 .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
                 .placeholder(R.drawable.ic_user)
                 .error(R.drawable.ic_user)
@@ -48,7 +48,7 @@ open class ImageLoader {
 
         fun load(location: String?, imageView: ImageView) {
             val requestOptions = RequestOptions()
-                .timeout(20000)
+                //.timeout(20000)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .placeholder(R.drawable.ic_user)
                 .error(R.drawable.ic_user)
@@ -61,7 +61,7 @@ open class ImageLoader {
 
         fun load(location: Uri?, imageView: ImageView) {
             val requestOptions = RequestOptions()
-                .timeout(5000)
+                //.timeout(5000)
                 .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
                 .placeholder(R.drawable.ic_user)
                 .error(R.drawable.ic_user)
@@ -74,7 +74,7 @@ open class ImageLoader {
 
         fun load(location: String, imageView: ImageView, placeholder: Int) {
             val requestOptions = RequestOptions()
-                .timeout(20000)
+                //.timeout(20000)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .placeholder(placeholder)
                 .error(placeholder)
@@ -89,7 +89,7 @@ open class ImageLoader {
             progressBar.visibility = View.VISIBLE
 
             val options = RequestOptions()
-                .timeout(20000)
+                //.timeout(20000)
                 .dontTransform()
                 .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
                 .placeholder(R.drawable.ic_user)
@@ -121,7 +121,7 @@ open class ImageLoader {
 
         fun loadWithPlatter(url: String?, imageView: ImageView, view: View?) {
             val requestOptions = RequestOptions()
-                .timeout(20000)
+                //.timeout(20000)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .placeholder(R.drawable.ic_user)
                 .error(R.drawable.ic_user)
